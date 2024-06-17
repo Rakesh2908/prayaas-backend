@@ -10,7 +10,7 @@ import checkoutRouter from './router/checkoutRouter.js';  // Adjusted import for
 
 const app = express();
 
-dotenv.config({ path: "./config.env" });
+dotenv.config({ path: "./.env" });
 
 app.use(
     cors({
