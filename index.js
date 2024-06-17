@@ -12,9 +12,11 @@ const app = express();
 
 dotenv.config({ path: "./.env" });
 
+const allowedOrigins = ['https://prayaas-zeta.vercel.app'];
+
 app.use(
     cors({
-        origin: [process.env.FRONTEND_URL],
+        origin: allowedOrigins,
         methods: ["POST"],
         credentials: true,
     })
